@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <link rel="stylesheet" href="style.css">
         <title>Edison Portfolio</title>
     </head>
     <body>
@@ -11,30 +11,33 @@
             <nav id="navbar">
                 <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'J3J326C3R');kofiwidget2.draw();</script>
                 <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About Me</a></li>
-                    <li><a>Skills</a></li>
-                    <li><a>Experince</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href='#experince'>Experince</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
+                <a href="#contact"><button class="button"><p>Contact</p></button></a>
             </nav>
+
             <section id="home">
-                <header>
-                    <h1>Edison Li</h1>
-                </header>
-                <img src="" alt="">
-                <div>
-                    <h2>Software Engineer, SDR, Make School c/o 2022</h2>
-                    <p>Based In San Fransisco, California</>
+                <div id="box-home">
+                    <img id="head-img" src="img/IMG_0953.jpeg" alt="">
+                    <header id="head-text">
+                        <h1>Hi! I'm Edison Li</h1>
+                        <h2>Software Engineer, SDR, Make School c/o 2022</h2>
+                        <p>Based In San Fransisco, California</p>
+                    </header>
                 </div>
             </section>
+
+            <!-- About me section describes how I started in software -->
             <section id="about-me">
                 <h2>About Me</h2>
                 <div>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>Battery Spencer In San Fransisco</figcaption>
+                    <figure id="hackathon_img">
+                        <img style="height: 30vh;"src="img/hackathon_group.jpg" alt="">
+                        <figcaption>"Team Cyfer at Hackathon" by <a href="https://ko-fi.com/edisonli">Nolan Ngo</a></figcaption>
                     </figure>
                     <p>
                         I come from a non-traditional background starting as a self-taught programmer in high school, I went to and won many hackathons gaining a great deal of prize money.
@@ -45,6 +48,113 @@
                     </p>
                 </div>
             </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div id="skill_list">
+                    <div>
+                        <h3>Full Stack and Mobile Development:</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Kotlin</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React.js</li>
+                            <li>React Native</li>
+                            <li>Node.js</li>
+                            <li>Swift</li>
+                            <li>Php</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Data Science and Machine Learning:</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Go (Golang)</li>
+                            <li>Java</li>
+                            <li>Keras</li>
+                            <li>OpenCv</li>
+                            <li>TensorFlow</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experince">
+                <h2>Experince</h2>
+                <ul>
+                    <li class="card">
+                        <h3>Software Engineer Intern at Media Mobilize</h3>
+                        <p>Built and updated version of their newsletter website call "Daily Pnut" with a new modern design using wordpress and php. 
+                        Integrated a refferal system into their other site "Sports Newsletter". Created python scripts to scrape sponsorships/partner 
+                        brands on other newsletter sites that exported as a csv file.</p>
+                        <a href="https://github.com/edison4354/newsletter_scrape">View Project</a>
+                    </li>
+                    <li class="card">
+                        <h3>Full-Stack Mobile Developer Intern At BitBroker Labs</h3>
+                        <p>Developed several react native applications at Bitbroker Labs. 
+                        Also built up the bitbroker labs site and various backend + machine learning systems at Bitbroker Labs. 
+                        Tech used: HTML, CSS, Javascript, React, React Native, Django, Flask, Python, Tensorflow, Pytorch.</p>
+                        <a href="https://github.com/ed4354/pesopay">View Project</a>
+                    </li>
+                    <li class="card">
+                        <h3>Web Developer At Tutr Co</h3>
+                        <p>Worked on designing and building Tutr Co's first version of their mentoring product, Mentorly, and 
+                        brought it to an audience of 2000+ site visitors. Tech used: Java, C++, Kubernetes, Docker, Sketch, Figma, Webflow</p>
+                        <a href="https://tutr-home.webflow.io/">View Project</a>
+                    </li>
+                    <li class="card"> 
+                        <h3>Mobile App Developer Intern At Mixcity</h3>
+                        <p>Built components for Mixciti's React Native application and setup the database system at Mixciti. Worked on the 
+                        creation of Mixciti's iOS and Android applications. Tech used: HTML, CSS, Javascript, React Native, Django, Python, SQL, Postgres, Google Cloud</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Create cards for projects section  -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li class="card">
+                        <h3>Skin Cancer iOS App (achieved accuracy 80% accuracy compared state of art 53% using dermatoscope technique)</h3>
+                        <p>A Hackathon Project - Consumer Skin Cancer Recognition IOS App my team and I built. All the training data is from dermstoscope imaging. 
+                        Thus, our project is meant for non-clinical use but for individuals who notice a lesion and would like a quick yet accurate diagnosis via 
+                        dermatoscope attachment to smartphone either for personal use or for one-time use at local pharmacies such as a CVS. While the model can run on normal 
+                        close-up smartphone images, lighting will be nonideal and the image may be blurry, providing less accurate results. There are other applications 
+                        in smartphone app stores that focus on this more layman imaging.</p>
+                        <a href="https://github.com/ed4354/Skinskan">View Project</a>
+                    </li>
+                    <li class="card">
+                        <h3>CarGO a car rental application (Java, Spring Boot, SmartCar, Gradle)</h3>
+                        <p>A REST API that allows clients to manage a pool of registered cars under the SmartCar API and temporarily license them to accounts. Made 
+                        for the HackMobility hackathon on July 20-21, 2019.</p>
+                        <a href="https://github.com/ed4354/CarGO">View Project</a>
+                    </li>
+                    <li class="card">
+                        <h3>GoSearch (Python, Selenium, Keras, Java, Spring Boot, Maven, JavaScript, React Native)</h3>
+                        <p>An application that uses public data from social media to generate day-to-day recommendations to users based on their interests. Built as a 
+                        collection of microservices facilitated by REST. Made for the yuuvis® hackathon on July 27-28, 2019.</p>
+                        <a href="https://github.com/ed4354/GoSearch">The user client (a mobile application)</a>
+                        <br>
+                        <a href="https://github.com/ed4354/Cyfer-Go-Search">The backend and scraper</a>
+                    </li>
+                    <li class="card">
+                        <h3>Lane Line Detection For Autonomous Vehicle Video Feed (Python, OpenCV)</h3>
+                        <p>A program that uses OpenCV to identify lane lines in videos of a self driving car. 
+                        It makes a copy of each frame of the video then grayscale, reduces noise, and smooth the copy to makes a 
+                        region of interest the shape of a triangle so it can use a red line detection algorithm to identify the the 
+                        lane lines and latest merges the copy and the original colored frames together.</p>
+                        <a href="https://github.com/ed4354/Lane-Line-Detection">View Project</a>
+                    </li>
+                </ul>
+            </section>
+
+            <footer id="contact">
+                <h2>Contact</h2>
+                <a href="edison4354@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/edison-l-832242167/">Linkedin</a>
+                <a href="https://github.com/edison4354">Github</a>
+            </footer>
         </main>
     </body>
 </html>
